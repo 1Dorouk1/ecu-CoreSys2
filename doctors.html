@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECU Doctors</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="dashboard">
+  <aside class="sidebar">
+    <img src="ECU-Logo.png" alt="ECU Logo" />
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a class="active" href="doctors.html">Doctors</a>
+    <a href="courses.html">Courses</a>
+    <button id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="dashboard-content">
+    <div class="dash-header">
+      <h1>Doctors Management</h1>
+      <p>Manage university doctors and departments</p>
+    </div>
+
+    <section class="crud-box">
+      <form id="doctorForm" class="crud-form">
+        <input type="hidden" id="doctorId" />
+
+        <input type="text" id="name" placeholder="Doctor Name" required />
+        <input type="email" id="email" placeholder="Doctor Email" required />
+        <input type="text" id="phone" placeholder="Phone" required />
+        <input type="text" id="department" placeholder="Department" required />
+        <input type="text" id="specialization" placeholder="Specialization" required />
+
+        <button type="submit">Save Doctor</button>
+      </form>
+
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Department</th>
+              <th>Specialization</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="doctorsTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/doctors.js"></script>
+</body>
+</html>

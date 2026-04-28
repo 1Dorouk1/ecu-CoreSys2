@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECU Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<section class="login-page">
+  <div class="floating-shape shape1"></div>
+  <div class="floating-shape shape2"></div>
+  <div class="floating-shape shape3"></div>
+
+  <div class="login-card">
+    <img src="ECU-Logo.png" alt="ECU Logo" />
+
+    <h2>Welcome Back</h2>
+    <p>Login to ECU Management System</p>
+
+    <form id="loginForm">
+      <div class="input-box">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-box">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <button type="submit">Login</button>
+      <p id="message"></p>
+    </form>
+
+    <a href="index.html" class="back-home">Back to Home</a>
+  </div>
+</section>
+
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECU Courses</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="dashboard">
+  <aside class="sidebar">
+    <img src="ECU-Logo.png" alt="ECU Logo" />
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="doctors.html">Doctors</a>
+    <a class="active" href="courses.html">Courses</a>
+    <button id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="dashboard-content">
+    <div class="dash-header">
+      <h1>Courses Management</h1>
+      <p>Manage academic courses</p>
+    </div>
+
+    <section class="crud-box">
+      <form id="courseForm" class="crud-form">
+        <input type="hidden" id="courseId" />
+
+        <input type="text" id="title" placeholder="Course Title" required />
+        <input type="text" id="code" placeholder="Course Code" required />
+        <input type="number" id="creditHours" placeholder="Credit Hours" required />
+        <input type="text" id="department" placeholder="Department" required />
+
+        <button type="submit">Save Course</button>
+      </form>
+
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Code</th>
+              <th>Credit Hours</th>
+              <th>Department</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="coursesTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/courses.js"></script>
+</body>
+</html>
