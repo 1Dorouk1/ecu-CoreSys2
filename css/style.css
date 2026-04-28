@@ -64,42 +64,40 @@ body {
 }
 
 .navbar a:hover {
-  color: #e51b23;
+  color: hsl(264, 85%, 28%);
 }
 
 .login-nav {
-  background: #e51b23;
+  background: #370969;
   color: #fff !important;
   padding: 14px 28px;
   border-radius: 8px;
-  box-shadow: 0 12px 25px rgba(229,27,35,0.35);
+  box-shadow: 0 12px 25px rgba(35, 4, 88, 0.35);
 }
 
 .hero {
   min-height: 650px;
-  padding: 80px 8%;
-  background:
-    linear-gradient(120deg, rgba(229,27,35,0.96), rgba(150,0,8,0.94)),
-    url("../ECU-Logo.png");
-  background-repeat: no-repeat;
-  background-position: right 12% center;
-  background-size: 360px;
+  padding: 100px 8%;
+  background: linear-gradient(120deg, rgba(57, 6, 161, 0.55), rgba(2, 11, 52, 0.95));
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
   color: #fff;
   overflow: hidden;
+  position: relative;
 }
 
 .hero-content {
+  flex: 1;
   max-width: 650px;
-  animation: slideLeft 1s ease forwards;
+  z-index: 2;
 }
 
 .badge {
   display: inline-block;
   background: #fff;
-  color: #e51b23;
+  color: #0e076b;
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: 800;
@@ -134,7 +132,7 @@ body {
 
 .main-btn {
   background: #fff;
-  color: #e51b23;
+  color: #0e076b;
 }
 
 .outline-btn {
@@ -148,14 +146,17 @@ body {
 }
 
 .hero-card {
-  width: 330px;
+  flex: 0.8;
+  max-width: 360px;
   padding: 35px;
   border-radius: 25px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.12);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
   animation: floatCard 4s ease-in-out infinite;
+  z-index: 2;
 }
 
 .hero-card h3 {
@@ -199,7 +200,7 @@ body {
   border-radius: 22px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.1);
   transition: 0.35s;
-  border-top: 5px solid #e51b23;
+  border-top: 5px solid #0e076b;
 }
 
 .card:hover,
@@ -210,12 +211,12 @@ body {
 
 .card h3,
 .news-card h3 {
-  color: #e51b23;
+  color: #0e076b;
   margin-bottom: 15px;
 }
 
 .red-section {
-  background: linear-gradient(135deg, #e51b23, #9e0008);
+  background: linear-gradient(135deg, #0e076b, #0a054d   );
   color: #fff;
 }
 
@@ -233,7 +234,7 @@ body {
 }
 
 .news-card span {
-  background: #e51b23;
+  background: #0e076b;
   color: #fff;
   padding: 7px 16px;
   border-radius: 20px;
@@ -282,7 +283,7 @@ footer {
 }
 
 .login-card > p {
-  color: #e51b23;
+  color: #0e076b;
   margin: 8px 0 25px;
   font-weight: 700;
 }
@@ -316,7 +317,7 @@ footer {
 .login-card button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #e51b23, #9e0008);
+  background: linear-gradient(135deg, #0e076b, #0a054d   );
   color: #fff;
   border: none;
   border-radius: 15px;
@@ -328,7 +329,7 @@ footer {
 
 .login-card button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 35px rgba(229,27,35,0.45);
+  box-shadow: 0 16px 35px rgba(14, 7, 107, 0.45);
 }
 
 #message {
@@ -339,7 +340,7 @@ footer {
 .back-home {
   display: inline-block;
   margin-top: 18px;
-  color: #e51b23;
+  color: #0e076b  ;
   font-weight: 800;
   text-decoration: none;
 }
@@ -415,7 +416,7 @@ footer {
 .sidebar a:hover,
 .sidebar a.active,
 .sidebar button:hover {
-  background: #e51b23;
+  background: #0e076b;
 }
 
 .dashboard-content {
@@ -424,7 +425,7 @@ footer {
 }
 
 .dash-header {
-  background: linear-gradient(135deg, #e51b23, #9e0008);
+  background: linear-gradient(135deg, #0e076b, #0a054d    );
   color: #fff;
   padding: 40px;
   border-radius: 25px;
@@ -443,7 +444,7 @@ footer {
   display: block;
   margin-top: 15px;
   font-size: 38px;
-  color: #e51b23;
+  color: #0e076b;
   font-weight: 900;
 }
 
@@ -558,15 +559,15 @@ footer {
 }
 
 .crud-form input:focus {
-  border-color: #e51b23;
-  box-shadow: 0 0 0 4px rgba(229,27,35,0.13);
+  border-color: #0e076b;
+  box-shadow: 0 0 0 4px rgba(14, 7, 107, 0.13);
 }
 
 .crud-form button {
   padding: 15px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(135deg, #e51b23, #9e0008);
+  background: linear-gradient(135deg, #0e076b, #0a054d    );
   color: white;
   font-weight: 900;
   cursor: pointer;
@@ -575,7 +576,7 @@ footer {
 
 .crud-form button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(229,27,35,0.35);
+  box-shadow: 0 14px 30px rgba(14, 7, 107, 0.35);
 }
 
 .table-box {
@@ -623,7 +624,7 @@ tbody tr:hover {
 }
 
 .delete-btn {
-  background: #e51b23;
+  background: #0e076b;
 }
 .white-text {
   color: #fff !important;
@@ -661,7 +662,7 @@ tbody tr:hover {
 .faculty-card-link:hover {
   transform: translateY(-12px) scale(1.03);
   background: #fff;
-  color: #e51b23;
+  color: #800ee4;
 }
 
 .faculty-card-link h3 {
@@ -684,7 +685,7 @@ tbody tr:hover {
 
 .faculty-hero {
   padding: 90px 8%;
-  background: linear-gradient(135deg, #e51b23, #970008);
+  background: linear-gradient(135deg, #0e076b, #0a054d   );
   color: #fff;
 }
 
@@ -709,11 +710,11 @@ tbody tr:hover {
   border-radius: 24px;
   box-shadow: 0 20px 55px rgba(0,0,0,0.1);
   margin-bottom: 30px;
-  border-left: 6px solid #e51b23;
+  border-left: 6px solid #0e076b;
 }
 
 .info-box h2 {
-  color: #e51b23;
+  color: #0e076b;
   margin-bottom: 15px;
 }
 
@@ -745,7 +746,7 @@ tbody tr:hover {
   background: #fff5f5;
   padding: 22px;
   border-radius: 18px;
-  border: 1px solid rgba(229,27,35,0.16);
+  border: 1px solid rgba(14, 7, 107, 0.16);
   transition: 0.3s;
 }
 
@@ -756,7 +757,7 @@ tbody tr:hover {
 }
 
 .staff-card h3 {
-  color: #e51b23;
+  color: #0e076b;
   margin-bottom: 8px;
 }
 
@@ -765,7 +766,7 @@ tbody tr:hover {
   color: #222;
 }
 .stats-section {
-  background: linear-gradient(135deg, #111, #2b0000);
+  background: linear-gradient(135deg, #111, #14002a);
   color: #fff;
 }
 
